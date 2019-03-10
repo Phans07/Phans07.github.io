@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--Created by: Steven Phan
+	Student#: 250880518 -->
+
+<html>
+    <head>
+        <title>Genetics and Biochemistry - SPHAN7</title>
+        <link rel="stylesheet" type="text/css" href="css/blocks.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+		<script type="text/javascript" src="js/script.js"></script>
+        
+        
+    </head>
+    <body>
+        <div class="wrapper" id="main">
+            <section>
+                
+                <div class="ib i1"><img src="images/building.jpg" class="banner"/></div>
+            </section>
+            <section>
+                <div class="ib i2"><img src="images/science_logo.png" id="logo"/></div>
+                
+            </section>
+            
+            
+            <section>
+                <h1>Department of Biology</h1>
+                <div> <ul class="links">
+					<a href="#about" class="bookmarks"><li class="ib i4"><b>About</b></li></a><a href="#courses" class="bookmarks"><li class="ib i4"><b>Courses</b></li></a><a href="#contact" class="bookmarks"><li class="ib i4"><b>Contact</b></li></a><a href="#references" class="bookmarks"><li class="ib i4"><b>References</b></li></a> 
+                	</ul>
+				</div>
+            </section>
+			
+            <section>
+				<a name="about"></a>
+				<h2>About</h2>
+                
+				<div>
+					<h4 class="content">Genetics and Biochemistry</h4>
+					<p class= "ib i3 content">Western offers great facilities and teaching resources for students looking to become researchers. Learn about different biomolecular techniques that can be used in cutting-edge research!</p>
+					<img src="images/lab.jpg" id="lab" class = "ib i3"/>
+					<img src="images/lab2.jpg" id="lab" class="ib i3"/>
+					
+				</div>
+				<div>
+					<p class="ib i3 content">The Genetics and Biochemistry program offers students to learn both biochemical and genetic principles!</p>
+				</div>	
+				
+                
+            </section>
+			<section id="course">
+				<a name="courses"></a>
+				<h2>Courses</h2>
+				
+				<div class="ib i3 content">
+					<h4>Biology 3596</h4>
+					<p>Offers an introduction to biochemical and genetic experimental approaches that allow you to have a hands-on experience in the laboratory! Overall good experience for future researchers!</p>
+				</div>
+				<div class="ib i3 content">
+					<h4>Biology 4515B</h4>
+					<p>Focuses on the power of genome sequencing as a tool to understand whole genome interaction, expression, and regulation. Students will focus on several genome sequencing strategies. Very stale content.</p>
+				</div>			
+				<div class="ib i3 content">
+					<h4>Biochemistry 4410</h4>
+					<p>Learn about control of gene expression through signalling and protein-DNA interactions. Overall fun course!</p>
+				</div>
+				<img class="ib i3" src="images/westernbadge.png" id="badge"/>
+				
+			</section>
+			
+			<section>
+				<a name="contact"></a>
+				<h2>Contact</h2>
+				
+				<img src="images/contact.png" class="ib i3"/>
+				
+				<form>
+					<label for="name">Name</label>
+					<input type="text" id="name" class="textbox" onblur="checkName();"/>
+					
+					<label for="email">Email</label>
+					<input type="text" id="email" class="textbox" onblur="checkEmail();"/>
+					
+					<label for="phone">Phone (no hyphens or spaces)</label>
+					<input type="text" id="phone" class="textbox" onblur="checkPhone();"/>
+					
+					<h3>Education</h3>
+					<div class="row"><input type="radio" name="education" id="highschool"/><label for="highschool">High School</label></div>
+					<div class="row"><input type="radio" name="education" id="college"/><label for="college">College</label></div>
+					<div class="row"><input type="radio" name="education" id="university"/><label for="university">University</label></div>
+					<div class="row"><input type="radio" name="education" id="none"/><label for="none">None</label></div>
+					
+					
+					
+					
+					<h3>Interests</h3>
+					<div class="row"><input type="checkbox" name="interests" id="int1"/><label for="int1">Biology</label></div>
+					<div class="row"><input type="checkbox" name="interests" id="int2"/><label for="int2">DNA</label></div>
+					<div class="row"><input type="checkbox" name="interests" id="int3"/><label for="int3">Proteins</label></div>
+					<div class="row"><input type="checkbox" name="interests" id="int4"/><label for="int4">RNA</label></div>
+					<div class="row"><input type="checkbox" name="interests" id="int5"/><label for="int5">Research</label></div>
+					<div class="row"><input type="checkbox" name="interests" id="int6"/><label for="int6">Lab</label></div>
+					
+					<h3>Country</h3>
+					<div class="row"><input type="radio" name="country" id="canada" onclick="updateStatus();"/><label for="canada">Canada</label></div>
+					<div class="row"><input type="radio" name="country" id="unitedstates" onclick="updateStatus();"/><label for="unitedstates">United States</label></div>
+					<div class="row"><input type="radio" name="country" id="other" onclick="updateStatus();"/><label for="other">Other</label></div>
+					
+					<div class="row code"><label for="postal" class="hidden" id="postallabel">Postal Code</label><input type="text" id="postal" class="textbox hidden" /></div>
+					<div class="row code"><label for="zipcode" class="hidden" id="zipcodelabel">Zip Code</label><input type="text" id="zipcode" class="textbox hidden" /></div>
+					
+					<input type="submit" name="submit" value="Submit" />
+					
+					<p><b class="content">Our Email: </b><a href="mailto:email@email.com" class="content">example123@email.com</a></p>
+					
+					<p><b class="content">Our Partners: </b><a href="https://google.ca" target="_blank" class="content">Example</a></p>
+
+
+
+
+				</form>
+				
+			</section>
+			<section class="content">
+				<h2>References</h2>
+				
+				<p><b>Banner: </b>This photo is of the Western Interdisciplinary Research Bulding, photo taken by me (Steven Phan).</p>
+				<p><b>Western Science Logo: </b><a href=https://www.uwo.ca/sci/index.html target="_blank" class="imagelinks">The Western Science Logo. www.uwo.ca/sci/index.html</a></p>
+				<p><b>Lab Photo 1: </b><a href="https://www.shutterstock.com/image-photo/doctor-hand-taking-blood-sample-tube-1114244621" target="_blank" class="imagelinks">photo of hand holding a vial. https://www.shutterstock.com/image-photo/doctor-hand-taking-blood-sample-tube-1114244621</a></p>
+				<p><b>Lab Photo 2: </b><a href="http://www.mandel.ca/catalog/about_mandel/about_mandel_newlab" target="_blank" class="imagelinks">photo of girl holding a test-tube. http://www.mandel.ca/catalog/about_mandel/about_mandel_newlab</a></p>
+				<p><b>Favicon: </b><a href=https://www.favicon.cc target="_blank" class="imagelinks">Favicon created using www.favicon.cc</a></p>
+				<p><b>Western Badge: </b><a href=https://owl.uwo.ca target="_blank" class=imagelinks>Western badge taken from OWL website. https://owl.uwo.ca</a></p>
+				<p><b>Contact photo: </b><a href=https://cookstreetvillageactivitycentre.com/contact-us target="_blank" class=imagelinks>icons of email, phone, location obtained from https://cookstreetvillageactivitycentre.com/contact-us</a></p>
+				
+				
+				<a name="references"></a>
+			</section>
+            
+            
+            
+            
+        </div>
+    </body>
+    
+</html>    
