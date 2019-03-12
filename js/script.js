@@ -63,36 +63,3 @@ function checkPhone() {		//check whethers the phone number is at least character
 	}
 }
 
-function scroll() {
-	var t = window.scrollY;
-	
-	var about = document.getElementById("about");
-	var courses = document.getElementById("courses");
-	var contact = document.getElementById("contact");
-	var references = document.getElementById("references");
-	
-	var s1 = document.getElementById("s1");
-	var s2 = document.getElementById("s2");
-	var s3 = document.getElementById("s3");
-	var s4 = document.getElementById("s4");
-	
-	var t1 = s1.offsetTop;
-	var t2 = s2.offsetTop;
-	var t3 = s3.offsetTop;
-	var t4 = s4.offsetTop;
-	
-	about.style.borderBottomColor = "rgb(79,38,131)";
-	courses.style.borderBottomColor = "rgb(79,38,131)";
-	contact.style.borderBottomColor = "rgb(79,38,131)";
-	references.style.borderBottomColor = "rgb(79,38,131)";
-	
-	if (t > t4) {
-		references.style.borderBottomColor = "black";
-	} else if (t > t3) {
-		contact.style.borderBottomColor = "black";
-	} else if (t > t2) {
-		courses.style.borderBottomColor = "black";
-	} else if (t > t1) {
-		about.style.borderBottomColor = "black";
-	}
-}
