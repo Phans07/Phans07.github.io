@@ -56,7 +56,7 @@ function checkPhone() {		//check whethers the phone number is at least character
 	var phoneBox = document.getElementById("phone");
 	var phone = phoneBox.value;
 	
-	if (phone.length < 8 || isNaN(phone)) {
+	if (phone.length < 10 || isNaN(phone)) {
 		phoneBox.style.borderColor = "red";
 	} else {
 		phoneBox.style.borderColor = "green";
