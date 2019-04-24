@@ -1,0 +1,137 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Phan Apparel - Registration</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	</head>
+	<body>
+		
+	<!--Tinted Banner-->	
+		<div class="banner">
+			<div class="bannertint">
+				<div class="bannercaption">Phan Apparel</div>
+			</div>
+			</div>	
+		<div class="container">
+			
+			<!--NAVBAR-->	
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  				<a class="navbar-brand" href="index.html">Phan Apparel</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				  </li>
+
+				  <li class="nav-item">
+					<a class="nav-link" href="products.html">
+					  Products
+					</a>
+				  </li>
+				  <li class="nav-item active">
+					<a class="nav-link" href="registration.html">Registration</a>
+				  </li>
+
+				  <li class="nav-item">
+					<a class="nav-link" href="references.html">References</a>
+				  </li>
+				
+				<!--Other dropdown menu-->
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Other
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" target="_blank" href="https://www.thebay.com/" onclick="$('#collapseOne').collapse('show');">Hudson's Bay</a>
+						
+					  <a class="dropdown-item" target="_blank" href="https://www2.hm.com/en_ca/index.html" onclick="$('#collapseTwo').collapse('show');">H&M</a>
+						
+					  <a class="dropdown-item" target="_blank" href="https://www.indiamart.com/" onclick="$('#collapseThree').collapse('show');">India Mart</a>
+					 
+					</div>
+				  </li>
+
+
+		
+		
+	</ul>
+  </div>
+</nav>
+			
+<div class="space"></div>
+
+<h2>Registration</h2>
+<div class="space"></div>
+
+			
+<!--Input Form-->
+<form>
+					
+					<label for="email">Email</label>
+					<input type="text" id="email" class="textbox"/>
+					
+					<label for="password">Password</label>
+					<input type="password" id="password" class="textbox"/>
+	
+	
+					<label for="confirm">Confirm Password</label>
+					<input type="password" id="confirm" class="textbox"/>
+					
+					<div class="space"></div>
+					
+					
+				
+					<!--Submit button that verifies input-->
+	
+					<button type="button" class="btn btn-primary" onclick="checkEmail(); checkPassword();">Submit</button> 
+	
+					
+					
+					
+
+
+
+
+				</form>
+	<div class="space"></div>
+	
+<!--Animated logo that goes back and forth-->
+	<div class='rookBox'>
+                <div class='animatedLogo' id='rook'></div>
+            </div>
+	
+	
+	
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,65 +1,54 @@
-function updateStatus() { // this function checks the status of the country radial buttons
-	var canadastatus = document.getElementById("canada");
-	var postallabel = document.getElementById("postallabel")
-	var postaltext = document.getElementById("postal");
-	var usstatus = document.getElementById("unitedstates")
-	var zipcodelabel = document.getElementById("zipcodelabel");
-	var zipcodetext = document.getElementById("zipcode");
+
+function scroll() {		//used as a scrollfire function for parallax image on about page
+	var t = window.scrollY;
+	var para = document.getElementsByClassName("large-img");
+	var m = -0.25;
+	var b = 0;
+	var newY = m*t + b;
+	para.style.backgroundPositionY = newY + "px";
 	
-	if (usstatus.checked) {	// if the United States radial button is pressed, then show the zip code text box
-		zipcodelabel.className = "visible";
-		zipcodetext.className = "textbox visible";
-		
-		postallabel.className = "hidden";
-		postaltext.className = "textbox hidden";
-	} else if (canadastatus.checked) { // if the Canada radial button is checked, then show the postal code text box
-		postallabel.className = "visible";
-		postaltext.className = "textbox visible";
-		
-		zipcodelabel.className = "hidden";
-		zipcodetext.className = "textbox hidden";
-	} else {								// if the other radial button is checked, then hide the Canada and/or the United States text boxes
-		zipcodelabel.className = "hidden";
-		zipcodetext.className = "textbox hidden";
-		postallabel.className = "hidden"
-		postaltext.className = "textbox hidden";
-	}
+	
 }
 
-
-function checkName() {	//Checks whether the name entered is at least 5 characters
-	var nameBox = document.getElementById("name");
-	var name = nameBox.value;
-	
-	
-	if (name.length < 5) {
-		nameBox.style.borderColor = "red";
-	} else {
-		nameBox.style.borderColor = "green";
+function enlarge() {			//function is used to enlarge logo on index page
+	var s = window.scrollY;
+	var logo = document.getElementById("logo");
+	if (s > 800) {
+		logo.style.transform = "scale(2,2)";
 	}
 }
 
 
 
-function checkEmail() {	//Check whethers the email is entered at least 8 characters
+
+function checkEmail() {	//Check whethers the email has @ symbol
 	var emailBox = document.getElementById("email"); 
 	var email = emailBox.value;
 	
-	if (email.length < 8) {
-		emailBox.style.borderColor = "red";
-	} else {
+	if (email.indexOf('@') >=0) {
 		emailBox.style.borderColor = "green";
+	} else {
+		emailBox.style.borderColor = "red";
 	}
 }
 
-function checkPhone() {		//check whethers the phone number is at least characters and is a number
-	var phoneBox = document.getElementById("phone");
-	var phone = phoneBox.value;
+function checkPassword() {	//Check whether the password is greater than 8 characters and checks to see if confirm password matches password
+	var passwordBox = document.getElementById("password"); 
+	var password = passwordBox.value;
+	var confirmBox = document.getElementById("confirm");
+	var confirm = confirmBox.value;
 	
-	if (phone.length < 10 || isNaN(phone)) {
-		phoneBox.style.borderColor = "red";
+	if (password.length < 8) {
+		passwordBox.style.borderColor = "red";
 	} else {
-		phoneBox.style.borderColor = "green";
+		passwordBox.style.borderColor = "green";
+	}
+	
+	if (confirm === password) {
+		confirmBox.style.borderColor = "green";
+	}
+	else {
+		confirmBox.style.borderColor = "red";
 	}
 }
 
